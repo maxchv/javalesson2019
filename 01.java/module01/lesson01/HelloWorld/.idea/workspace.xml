@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1f3412f-8692-4f28-80b4-c5c050baa775" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/itstep/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/itstep/lesson/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/Java._Introduction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/study_project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Quiz (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Boolean/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Character/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Character/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Character/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Comments/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Floating-point/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (10)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (5)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (6)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (7)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (8)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming (9)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Integer/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz (5)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Intro/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Main method/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Programming (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Math/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Type Casting/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Type Casting/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Theory (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Theory (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/Variables and Types/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java. Introduction/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HelloWorld.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/itstep/HelloWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/itstep/lesson/HelloWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/App.java" />
+        <option value="$PROJECT_DIR$/src/HelloWorld.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Course" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HelloWorld" type="58d84e3e:PackageViewProjectNode" />
+              <item name="HelloWorld" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="itstep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="itstep" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HelloWorld (1)">
+    <configuration name="HelloWorld (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.itstep.HelloWorld" />
+      <module name="HelloWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWorld (1)" />
+        <item itemvalue="Application.HelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1f3412f-8692-4f28-80b4-c5c050baa775" name="Default Changelist" comment="" />
+      <created>1555349966362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555349966362</updated>
+      <workItem from="1555349973304" duration="1295000" />
+      <workItem from="1555514908128" duration="102000" />
+      <workItem from="1555515955644" duration="250000" />
+      <workItem from="1555516251632" duration="2720000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4367000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.35969663" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.47777778" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32936078" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/production/HelloWorld/HelloWorld.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/itstep/lesson/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5175">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#53706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/itstep/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

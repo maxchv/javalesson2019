@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="450ee7ae-aedb-4d86-b77e-d79273fda88e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/HelloWorld/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/HelloWorld/src/org/itstep/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/HelloWorld/src/org/itstep/lesson/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/Java._Introduction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/study_project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Quiz (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Boolean/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Character/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Character/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Character/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Comments/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Floating-point/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (10)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (5)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (6)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (7)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (8)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming (9)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Integer/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz (5)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Intro/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Quiz (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Main method/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Programming (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Programming (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Programming (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Programming (4)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Math/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Type Casting/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Type Casting/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Programming/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Quiz (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Quiz/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Theory (1)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Theory (2)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Theory (3)/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/Variables and Types/Theory/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson01/Java. Introduction/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson02/datatypes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/lesson02/datatypes/src/org/itstep/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson03/src/org/itstep/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson04/src/org/itstep/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson04/src/org/itstep/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/lesson01/HelloWorld/src/HelloWorld.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task03.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task04.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task05.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task06.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task08.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task09.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task10.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task11.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task12.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task07.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ua/step/examples/util/helper/Binary.java" />
+        <option value="$PROJECT_DIR$/src/ua/step/homework/Task01.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="58" />
+    <option name="y" value="249" />
+    <option name="width" value="1750" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Course" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Shifter">
+    <configuration name="Multicast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.step.puzzle.Multicast" />
+      <module name="module 03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.step.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rhymes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.step.puzzle.Rhymes" />
+      <module name="module 03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.step.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shifrer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.step.puzzle.Shifrer2" />
+      <module name="module 03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.step.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.step.puzzle.Shift" />
+      <module name="module 03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.step.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shifter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.step.puzzle.Shifter" />
+      <module name="module 03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.step.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Shifter" />
+        <item itemvalue="Application.Shift" />
+        <item itemvalue="Application.Shifrer2" />
+        <item itemvalue="Application.Rhymes" />
+        <item itemvalue="Application.Multicast" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="450ee7ae-aedb-4d86-b77e-d79273fda88e" name="Default Changelist" comment="" />
+      <created>1556131028446</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556131028446</updated>
+      <workItem from="1556131029904" duration="427000" />
+      <workItem from="1556131582198" duration="100000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="527000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24040511" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/imag/+.png" />
+    <entry file="file://$PROJECT_DIR$/imag/1Off.png" />
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part0/cast/Task00.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part0/cast/Task01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part0/cast/Task02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part0/cast/Task03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task00.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part1/condition/Task07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part2/input/Task00.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/part2/input/Task01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imag/128Off.png" />
+    <entry file="file://$PROJECT_DIR$/src/ua/step/examples/util/helper/Binary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/CleverSwap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/DosEquis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/Multicast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/Rhymes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/Shifrer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/Shift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/puzzle/Shifter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/step/homework/Task12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
