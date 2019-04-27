@@ -1,8 +1,9 @@
 package ua.step.examples.part3.bits;
 
-import static ua.step.examples.util.helper.Binary.printToBinary;
 
 import ua.step.examples.util.switcher.BitsSwitcher;
+
+import static ua.step.examples.util.helper.Binary.printToBinary;
 
 /**
  * 
