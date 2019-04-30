@@ -13,6 +13,14 @@ public class Task04
     {
         int x = 1;
         int y = 1;
-        
+
+        // строки ниже нужны для тестирования, не удаляйтее ее и не изменяйте
+        x = (args.length > 0) ? Integer.valueOf(args[0]) : x;
+        y = (args.length > 1) ? Integer.valueOf(args[1]) : y;
+        // пишите код ниже испоьзуя переменные объявленные выше, проверить
+        // решение можно запустив @see TestTask04.java
+
+        // FIXME: Изменить вывод на корректный
+        System.out.println("I");
     }
 }
