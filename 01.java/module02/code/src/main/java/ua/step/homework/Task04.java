@@ -7,10 +7,8 @@ package ua.step.homework;
  * Прием x=1 y=11 Вывод I
  * Прием x=-2 y=-3 Вывод III
  */
-public class Task04
-{
-    public static void main(String[] args)
-    {
+public class Task04 {
+    public static void main(String[] args) {
         int x = 1;
         int y = 1;
 

@@ -7,11 +7,13 @@ import java.util.Scanner;
  * программа выводит приветствие, соответствующее введённому времени (например,
  * ввели 15 часов – выводится приветствие «добрый день»).
  */
-public class Task02
-{
-    public static void main(String[] args)
-    {
+public class Task02 {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Который сейчас час? [0..23]: ");
         int time = scanner.nextInt();
+
+        // TODO: здесь ваш код
     }
 }

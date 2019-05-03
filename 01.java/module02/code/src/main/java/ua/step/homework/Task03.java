@@ -5,12 +5,9 @@ package ua.step.homework;
  * неравных между собой числа. Создать программу, которая переставит числа в
  * переменных таким образом, чтобы при выводе на экран последовательность a, b и
  * c оказалась строго возрастающей. Пример 7 4 5 Вывод 4 5 7
- * 
  */
-public class Task03
-{
-    public static void main(String[] args)
-    {
+public class Task03 {
+    public static void main(String[] args) {
         int a = 7;
         int b = 4;
         int c = 5;
@@ -23,5 +20,7 @@ public class Task03
 
         // TODO не менять строку вывода
         System.out.printf("%d %d %d", a, b, c);
+
+        // TODO: здесь ваш код
     }
 }

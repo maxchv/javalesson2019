@@ -10,14 +10,12 @@ import java.io.IOException;
  * символ не относится ни к буквам ни к цифрам вывести «невозможно определить».
  * Программа не долджна зависеть от регистра букв. Подсказка: Символы в таблице
  * UNICODE распологаюся в алфавитном порядке.
- * 
- * 
  */
-public class Task07
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Task07 {
+    public static void main(String[] args) throws IOException {
         char letter = (char) System.in.read();
         System.out.println(letter);
+
+        // TODO: здесь ваш код
     }
 }

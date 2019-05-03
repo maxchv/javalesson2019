@@ -43,6 +43,8 @@ public class TestTask01 extends BaseTest {
     @Test
     public void test() {
         Task01.main(null);
-        assertEquals(name, outContent.toString().toLowerCase().trim());
+        String out = outContent.toString();
+        int idx = out.indexOf(":");
+        assertEquals(name, out.substring(idx+1).toLowerCase().trim());
     }
 }

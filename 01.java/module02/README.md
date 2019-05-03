@@ -11,4 +11,4 @@
 
 ## Usefull links
 
-1. []()
+1. [JavaCode Conventions](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
