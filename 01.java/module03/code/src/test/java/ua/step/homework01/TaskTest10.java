@@ -7,6 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 
 public class TaskTest10 extends BaseTest {
+
 	@Test
 	public void test() {
 		Task10.main(null);

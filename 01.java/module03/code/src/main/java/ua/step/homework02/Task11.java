@@ -7,7 +7,6 @@ package ua.step.homework02;
  *
  */
 public class Task11 {
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int year = 2016;
 		int month = 1;

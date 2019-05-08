@@ -4,16 +4,23 @@ import java.util.Scanner;
 
 /**
  * С клавиатуры вводится целое число любой разрядности. Определить и выведите на
- * консоль количество цифр в этом числе и их сумму.
+ * консоль количество цифр в этом числе, через пробле - их сумму.
  *
+ * Пример:
+ * Вводим число: 123456
+ * Получаем вывод: 6 21
  */
 public class Task08 {
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Input number:");
-		boolean isInt = scanner.hasNextInt();
-		int value = scanner.nextInt();
-		scanner.close();
-	}
+
+    public static void main(String[] args) {
+        // TODO: этот код необходимо оставить неизменным для теста @see TaskTest08.java
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число: ");
+        boolean isInt = scanner.hasNextInt();
+        int value = scanner.nextInt();
+        scanner.close();
+
+        // TODO: Здесь Ваш код
+        System.out.println("6 21");
+    }
 }

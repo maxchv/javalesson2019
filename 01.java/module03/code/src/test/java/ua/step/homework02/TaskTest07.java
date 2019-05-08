@@ -1,33 +1,41 @@
 package ua.step.homework02;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import ua.step.BaseTest;
 
-public class TaskTest07 {
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.Collection;
 
-	@Before
-	public void setUpStreams() {
-		System.setOut(new PrintStream(outContent));
+@RunWith(Parameterized.class)
+public class TaskTest07 extends BaseTest {
+
+	private final String number;
+	private final String expected;
+
+	public TaskTest07(String number, String expected) {
+		super(null, Task07.class);
+		this.number = number;
+		this.expected = expected;
 	}
 
-	@After
-	public void cleanUpStreams() {
-		System.setOut(null);
+	@Parameterized.Parameters
+	public static Collection<Object[]> data() {
+		return Arrays.asList(new Object[][]{
+				{"123456", "654321"},
+				{"987654", "456789"},
+				{"123321", "123321"},
+				{"111111", "111111"},
+				{"121212", "212121"},
+		});
 	}
 
 	@Test
-	public void test() {
-		String inputData = String.valueOf(123456);
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task07.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().trim().contains("654321"));
+	public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        if(testClass == null) return;
+        String errorMessage = String.format("Wrong reverse for number: %s", number);
+        super.systemInputTest(number, expected, errorMessage);
 	}
 }

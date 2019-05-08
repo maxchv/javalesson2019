@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TaskTest06 extends BaseTest {
 
+
 	@Test
 	public void test() {
 		Task06.main(null);

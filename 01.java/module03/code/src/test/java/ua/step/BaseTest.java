@@ -6,10 +6,25 @@ import org.junit.Before;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-public class BaseTest {
+import static org.junit.Assert.assertEquals;
+
+public abstract class BaseTest {
     protected final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     protected final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    protected Class testClass;
+    protected final String[] args;
+
+    protected BaseTest() {
+        this(null, null);
+    }
+
+    protected BaseTest(String[] args, Class testClass) {
+        this.args = args;
+        this.testClass = testClass;
+    }
 
     @Before
     public void setUpStreams()
@@ -24,5 +39,19 @@ public class BaseTest {
         System.setOut(null);
         System.setErr(null);
         System.setIn(null);
+    }
+
+    protected void systemInputTest(String input, String expected, String errorMessage) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        System.setIn(new java.io.ByteArrayInputStream(input.getBytes()));
+        invokeMain();
+        String out = outContent.toString().trim().toLowerCase();
+        int idx = out.lastIndexOf(":"); // Разделитель ввода пользователя
+        String actual = out.substring(idx+2);
+        assertEquals(errorMessage, expected, actual);
+    }
+
+    private void invokeMain() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        Method main = testClass.getMethod("main", String[].class);
+        main.invoke(null, (Object)args);
     }
 }
