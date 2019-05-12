@@ -21,6 +21,5 @@ public class Task08 {
         scanner.close();
 
         // TODO: Здесь Ваш код
-        System.out.println("6 21");
     }
 }

@@ -3,18 +3,48 @@ package ua.step.homework02;
 import java.util.Scanner;
 
 /**
- * Необходимо нарисовать ёлочку символом звёздочки. Каждый новый ярус должен
+ * Задание: Необходимо нарисовать ёлочку символом звёздочки. Каждый новый ярус должен
  * быть шире предыдущего. С клавиатуры вводится количество ярусов, и высота
  * первого (верхнего) яруса ёлочки (количество строк в ярусе). Ёлочка должна
- * быть симметричная
+ * быть симметричная.
+ *
+ * Пример. Для a = 3, i = 3 программа выведет в консоль:
+ *
+ *       *
+ *      ***
+ *     *****
+ *       *
+ *      ***
+ *     *****
+ *    *******
+ *       *
+ *      ***
+ *     *****
+ *    *******
+ *   *********
+ *
+ *  Для a = 4, i = 2 программа выведет в коносль:
+ *
+ *      *
+ *     ***
+ *    *****
+ *   *******
+ *      *
+ *     ***
+ *    *****
+ *   *******
+ *  *********
  */
 public class Task09 {
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Input A and i");
-		int a = scanner.nextInt();
-		int i = scanner.nextInt();
-		scanner.close();
-	}
+    public static void main(String[] args) {
+        // TODO: этот код необходимо оставить неизменным для теста @see TaskTest09.java
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите количество ярусови и высоту первого (верхнего) яруса через пробел: ");
+        int a = scanner.nextInt();
+        int i = scanner.nextInt();
+        scanner.close();
+
+        // TODO: Здесь Ваш код
+
+    }
 }
