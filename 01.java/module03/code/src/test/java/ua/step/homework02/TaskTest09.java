@@ -15,17 +15,17 @@ public class TaskTest09 extends BaseTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"3 1", "    *\n" +
-                        "   ***\n" +
-                        "  *****"},
+                {"3 1", "  *\n" +
+                        " ***\n" +
+                        "*****"},
 
-                {"3 2", "    *\n" +
-                        "   ***\n" +
-                        "  *****" +
-                        "    *\n" +
-                        "   ***\n" +
-                        "  *****\n" +
-                        " *******"},
+                {"3 2", "   *\n" +
+                        "  ***\n" +
+                        " *****" +
+                        "   *\n" +
+                        "  ***\n" +
+                        " *****\n" +
+                        "*******"},
 
                 {"3 3", "    *\n" +
                         "   ***\n" +
@@ -40,10 +40,10 @@ public class TaskTest09 extends BaseTest {
                         " *******\n" +
                         "*********"},
 
-                {"4 1", "    *\n" +
-                        "   ***\n" +
-                        "  *****\n" +
-                        " *******"},
+                {"4 1", "   *\n" +
+                        "  ***\n" +
+                        " *****\n" +
+                        "*******"},
 
                 {"4 2", "    *\n" +
                         "   ***\n" +
