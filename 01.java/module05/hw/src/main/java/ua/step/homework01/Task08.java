@@ -4,9 +4,6 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Задание: Заполнить массив размерности n случайными строчны-
@@ -35,12 +32,6 @@ public class Task08 {
 
         int[] arr;
         // TODO: Пишите код здесь
-        Stream.generate(() -> (char) (rnd.nextInt(('z' - 'a' + 1)) + 'a'))
-                .limit(len)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet()
-                .stream()
-                .filter(e -> e.getValue() > 3)
-                .forEach((e) -> System.out.format("%c - %d раза\n", e.getKey(), e.getValue()));
+
     }
 }

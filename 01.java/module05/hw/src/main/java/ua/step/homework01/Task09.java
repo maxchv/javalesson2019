@@ -2,13 +2,8 @@ package ua.step.homework01;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * Задание: Заполнить массив размерности n случайными цифрами
@@ -35,15 +30,7 @@ public class Task09 {
 
         int[] arr;
         // TODO: Пишите код здесь
-        arr = IntStream.generate(() -> rnd.nextInt(len + 1 + 2) - 2)
-                .limit(len)
-                .toArray();
-        System.out.println("Исходный массив " + Arrays.toString(arr));
-        if(Arrays.stream(arr).anyMatch(item -> item == -2)) {
-            arr = Arrays.stream(arr).map(item -> item < 0 ? item*item : item)
-                    .toArray();
-        }
-        System.out.println("Результат " + Arrays.toString(arr));
+
 
     }
 }

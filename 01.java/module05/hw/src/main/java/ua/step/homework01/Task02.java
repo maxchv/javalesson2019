@@ -2,12 +2,10 @@ package ua.step.homework01;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.IntSummaryStatistics;
 import java.util.Random;
-import java.util.stream.IntStream;
 
 /**
- * Заполнить массив на 30 элементов случайными числами
+ * Задание: Заполнить массив на 30 элементов случайными числами
  * от -70 до +50.
  * Найти минимальный элемент и максимальный элементы и вывести их на консоль через пробел
  */
@@ -20,10 +18,6 @@ public class Task02 {
         Random rnd = new Random(seed);
 
         // TODO: Пишите код здесь
-        IntSummaryStatistics statistics = IntStream.generate(() -> rnd.nextInt(131) - 70)
-                .limit(30)
-                .summaryStatistics();
-        System.out.print(statistics.getMin() + " " + statistics.getMax());
 
     }
 }

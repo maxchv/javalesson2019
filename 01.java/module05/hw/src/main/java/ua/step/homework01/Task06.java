@@ -2,12 +2,7 @@ package ua.step.homework01;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Задание: Заполнить массив на 10 элементов случайными числами
@@ -35,12 +30,6 @@ public class Task06 {
         Random rnd = new Random(seed);
 
         // TODO: Пишите код здесь
-        List<Integer> lst = Stream.generate(() -> rnd.nextInt(11) - 5)
-                .limit(10)
-                .collect(Collectors.toList());
-        List<Integer> unique = lst.stream().distinct().collect(Collectors.toList());
-        for(Integer u: unique) {
-            System.out.println(u + " -> " + lst.indexOf(u) + " индекс");
-        }
+
     }
 }

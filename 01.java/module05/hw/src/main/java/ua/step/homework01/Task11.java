@@ -2,10 +2,8 @@ package ua.step.homework01;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 /**
  * Задание: Есть массив размером n элементов и заполненный
@@ -41,21 +39,6 @@ public class Task11 {
 
         int[] arr;
         // TODO: Пишите код здесь
-        arr = IntStream.generate(() -> rnd.nextInt(101))
-                .limit(n)
-                .toArray();
-        System.out.println("Исходный массив " + Arrays.toString(arr));
-        System.out.println("Результат");
-        int[] marr;
-        for(int i=0; i<n/m; i++) {
-            marr = new int[(i*m)%m == 0 ? m : i*m%m];
-            System.arraycopy(arr, i*m, marr, 0, marr.length);
-            System.out.println(Arrays.toString(marr));
-        }
-        if(n%m != 0) {
-            marr = new int[n%m];
-            System.arraycopy(arr, n - marr.length, marr, 0, marr.length);
-            System.out.println(Arrays.toString(marr));
-        }
+
     }
 }

@@ -1,11 +1,6 @@
 package ua.step.homework01;
 
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 /**
  * Программа должна выводить слово Yes для симметрич-
@@ -34,19 +29,6 @@ public class Task12 {
 
         int[][] marr;
         // TODO: Пишите код здесь
-        marr = new int[rows][cols];
-        for(int i=0; i<rows; i++) {
-            for(int j=0; j<cols; j++) {
-                marr[i][j] = scanner.nextInt();
-            }
-        }
-        String res = "yes";
-        for(int i=0; i<rows; i++) {
-            if(marr[i][0] != marr[i][cols-1]) {
-                res = "no";
-                break;
-            }
-        }
-        System.out.println(res);
+
     }
 }

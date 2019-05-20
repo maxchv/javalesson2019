@@ -2,10 +2,8 @@ package ua.step.homework01;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 /**
  * Задание: Заполнить массив размерности n случайными циф-
@@ -34,20 +32,5 @@ public class Task10 {
         int[] arr;
         // TODO: Пишите код здесь
 
-        arr = IntStream.generate(() -> rnd.nextInt(34))
-                .limit(len)
-                .toArray();
-        System.out.println("Исходный массив " + Arrays.toString(arr));
-
-        System.out.print("Индекс элемента ");
-        int idx = -1;
-        for(int i=1; i<arr.length-1; i++) {
-            if((arr[i-1] != 0 && arr[i] % arr[i-1] == 0) && (arr[i] % arr[i+1] == 0 && arr[i+1] != 0)) {
-                if(arr[i] != 0) {
-                    idx = i;
-                }
-            }
-        }
-        System.out.println(idx);
     }
 }

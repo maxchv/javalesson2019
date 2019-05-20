@@ -4,9 +4,6 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Задание: Заполнить массив размерности n случайными цифрами
@@ -34,10 +31,6 @@ public class Task07 {
 
         int[] arr;
         // TODO: Пишите код здесь
-        rnd.setSeed(0);
-        Stream.generate(() -> rnd.nextInt(11) + 3)
-                .limit(len)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .forEach((key, value) -> System.out.format("%d - %d раза\n", key, value));
+
     }
 }
