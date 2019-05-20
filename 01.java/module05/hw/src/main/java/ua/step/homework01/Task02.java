@@ -20,7 +20,7 @@ public class Task02 {
         Random rnd = new Random(seed);
 
         // TODO: Пишите код здесь
-        IntSummaryStatistics statistics = IntStream.generate(() -> rnd.nextInt(130) - 70)
+        IntSummaryStatistics statistics = IntStream.generate(() -> rnd.nextInt(131) - 70)
                 .limit(30)
                 .summaryStatistics();
         System.out.print(statistics.getMin() + " " + statistics.getMax());

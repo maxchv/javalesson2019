@@ -19,14 +19,14 @@ public class TaskTest05 extends BaseTest {
     @Parameterized.Parameters(name = "seed = {0}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"0", "-4 - 2 раза\n" +
-                      "4 - 2 раза"},
-                {"1", "-1 - 3 раза\n" +
-                        "3 - 3 раза"},
-                {"2", "2 - 2 раза\n" +
-                      "3 - 2 раза\n" +
-                      "4 - 2 раза\n" +
-                      "-5 - 2 раза"},
+                {"0", "1 - 3 раза\n" +
+                        "-3 - 3 раза\n" +
+                        "-5 - 2 раза"},
+                {"1", "-1 - 2 раза\n" +
+                        "1 - 2 раза\n" +
+                        "3 - 2 раза"},
+                {"2", "-4 - 2 раза\n" +
+                        "4 - 2 раза"},
         });
     }
 

@@ -23,14 +23,14 @@ import java.util.stream.Stream;
  */
 public class Task05 {
 	public static void main(String[] args) {
-        // TODO: не менять стоки ниже - нобходимо для тестирования @see ua.step.homework01.TaskTest02
+        // TODO: не менять стоки ниже - нобходимо для тестирования @see ua.step.homework01.TaskTest05
         long seed = args.length > 0 ? Long.parseLong(args[0]) : LocalDateTime.now().toEpochSecond(ZoneOffset.UTC);
 
         // Использовать для генерирования элементов массива
         Random rnd = new Random(seed);
 
         // TODO: Пишите код здесь
-        Stream.generate(() -> rnd.nextInt(10) - 5)
+        Stream.generate(() -> rnd.nextInt(11) - 5)
                 .limit(10)
                 .sorted()
                 //.peek(System.out::println)

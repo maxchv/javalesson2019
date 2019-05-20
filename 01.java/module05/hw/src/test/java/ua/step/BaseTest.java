@@ -42,10 +42,10 @@ public abstract class BaseTest {
     protected void systemInputTest(String input, String expected, String errorMessage) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
         invokeMain(this.args);
-        String out = outContent.toString().trim().toLowerCase();
+        String out = outContent.toString().trim().replaceAll("\\r", "").toLowerCase();
         int idx = out.lastIndexOf(":"); // Разделитель ввода пользователя
         String actual = out.substring(idx + 2);
-        assertEquals(errorMessage, expected, actual);
+        assertEquals(errorMessage, expected.toLowerCase(), actual);
     }
 
     protected void invokeMain(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
