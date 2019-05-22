@@ -1,59 +1,38 @@
 package ua.step.homework02;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import ua.step.BaseTest;
 
-import ua.step.homework02.Task04;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.Collection;
 
-public class TaskTest04 {
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
-	@Before
-	public void setUpStreams() {
-		System.setOut(new PrintStream(outContent));
+@RunWith(Parameterized.class)
+public class TaskTest04 extends BaseTest {
+	@Parameterized.Parameters(name = "string = {0} result = {1}")
+	public static Collection<Object[]> data() {
+		return Arrays.asList(new Object[][]{
+				{"ab baa aba abc","ab abc"},
+				{"idi if oko egh upl","if egh upl"},
+				{"Lyes no noupe yep yea","yes yep"},
+		});
 	}
 
-	@After
-	public void cleanUpStreams() {
-		System.setOut(null);
+	private final String input;
+	private final String expected;
+
+	public TaskTest04(String input, String expected) {
+		super(null, Task04.class);
+		this.input = input;
+		this.expected = expected;
 	}
 
 	@Test
-	public void test() {
-		String inputData = "ab baa aba abc";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task04.main(null);
-		String errorMessage = "Wrong result";
-		int index = outContent.toString().indexOf("ab");
-		String test = outContent.toString().substring(index).trim();
-		assertEquals(errorMessage, test, "ab abc");
-	}
-	
-	@Test
-	public void test2() {
-		String inputData = "idi if oko egh upl";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task04.main(null);
-		String errorMessage = "Wrong result";
-		int index = outContent.toString().indexOf("if");
-		String test = outContent.toString().substring(index).trim();
-		assertEquals(errorMessage, test, "if egh upl");
-	}
-	
-	@Test
-	public void test3() {
-		String inputData = "yes no noupe yep yea";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task04.main(null);
-		String errorMessage = "Wrong result";
-		int index = outContent.toString().indexOf("yes");
-		String test = outContent.toString().substring(index).trim();
-		assertEquals(errorMessage, test, "yes yep");
+	public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+		if(testClass == null) return;
+		String errorMessage = String.format("Ожидается, что для строки %s результат будет %s", input, expected);
+		super.systemInputTest(input, expected, errorMessage);
 	}
 }

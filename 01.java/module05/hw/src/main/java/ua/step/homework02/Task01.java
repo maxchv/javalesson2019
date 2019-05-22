@@ -3,17 +3,38 @@ package ua.step.homework02;
 import java.util.Scanner;
 
 /**
- * 
- * Ввести с клавиатуры строку текста, а затем один символ. Показать на экран
- * индексы и количество совпадений (ищем вхождения символа в строку).
- *
+ * Задание: Ввести с клавиатуры строку текста, а затем один символ. Показать на экран
+ * индексы (через пробел) и количество совпадений на следующей строке (ищем вхождения символа в строку).
+ * <p>
+ * <p>
+ * Если символ не найдет - выводить -1
+ * <p>
+ * Примечание: использовать методы строк
+ * <p>
+ * <p>
+ * Пример:
+ * Для строки "обороноспособность" и введенного символа "o" вывод будет:
+ * 0 2 4 6 9 11 14
+ * 7
  */
 public class Task01 {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Введите строку");
-		String string = scanner.nextLine();
-		System.out.println("Введите символ");
-		String value = scanner.nextLine();
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String string = scanner.nextLine();
+        System.out.print("Введите символ: ");
+        String value = scanner.nextLine();
+
+        // TODO: Пишите код здесь
+        int count = -1;
+        int idx = -1;
+        while ((idx = string.indexOf(value, idx + 1)) >= 0) {
+            System.out.print(idx + " ");
+            count++;
+        }
+        if (count >= 0) {
+            System.out.println();
+        }
+        System.out.println(count < 0 ? count : count + 1);
+    }
 }
