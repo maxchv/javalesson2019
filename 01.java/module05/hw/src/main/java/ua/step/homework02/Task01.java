@@ -26,15 +26,6 @@ public class Task01 {
         String value = scanner.nextLine();
 
         // TODO: Пишите код здесь
-        int count = -1;
-        int idx = -1;
-        while ((idx = string.indexOf(value, idx + 1)) >= 0) {
-            System.out.print(idx + " ");
-            count++;
-        }
-        if (count >= 0) {
-            System.out.println();
-        }
-        System.out.println(count < 0 ? count : count + 1);
+
     }
 }

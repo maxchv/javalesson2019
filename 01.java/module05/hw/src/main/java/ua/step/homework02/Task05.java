@@ -19,8 +19,6 @@ public class Task05 {
 		String line = scanner.nextLine();
 
 		// TODO: Пишите код здесь
-		System.out.println(Arrays.stream(line.toLowerCase().split("[\\s:]+"))
-				.filter(word -> word.length() % 2 == 0)
-				.count());
+
 	}
 }

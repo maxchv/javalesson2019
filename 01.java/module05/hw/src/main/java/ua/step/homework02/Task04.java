@@ -15,12 +15,6 @@ public class Task04 {
 		String line = scanner.nextLine();
 
 		// TODO: Пишите код здесь
-		String words = "eoauiy";
-		Arrays.stream(line.toLowerCase().split("\\s+"))
-				.filter(word -> word.length() >= 2
-						&& 	words.contains(word.substring(0, 1))
-						&& !words.contains(word.substring(word.length()-1)))
-				.forEach(s -> System.out.print(s + " "));
 
 	}
 }

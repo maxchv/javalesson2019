@@ -26,19 +26,7 @@ public class Task02 {
 		int position = scanner.nextInt();
 
 		// TODO: Пишите код здесь
-		Supplier supplier = new Supplier() {
-			@Override
-			public Object get() {
-				return ++start;
-			}
 
-			int start;
-		};
-		String s1 = Stream.generate(supplier).limit(1000)
-				.map(num -> String.valueOf(num))
-				.reduce((s, c) -> s + c.toString())
-				.get().toString();
-		System.out.println(s1.charAt(position - 1));
 
 
 	}

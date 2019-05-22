@@ -19,10 +19,6 @@ public class Task07 {
         String line = scanner.nextLine();
 
         // TODO: Пишите код здесь
-        line.chars()
-                .mapToObj(ch -> (char)ch)
-                .map(ch -> Character.isLowerCase(ch) ? Character.toUpperCase(ch) : Character.toLowerCase(ch))
-                .forEach(System.out::print);
 
     }
 }

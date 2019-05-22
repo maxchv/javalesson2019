@@ -24,13 +24,6 @@ public class Task06 {
         String line = scanner.nextLine().toLowerCase();
 
         // TODO: Пишите код здесь
-        String volwes = "eoauiy";
-        String[] arr = line.toLowerCase().split("\\s+");
-        System.out.println("Слов - " + arr.length);
-        String solid = line.replaceAll("\\s+", "");
-        String consonants = solid.replaceAll("["+volwes+"]+", "");
-        System.out.println("Гласных - " + (solid.length() - consonants.length()));
-        System.out.println("Согласных - " + consonants.length());
 
     }
 

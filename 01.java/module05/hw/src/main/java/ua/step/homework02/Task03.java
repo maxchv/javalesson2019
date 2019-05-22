@@ -18,10 +18,6 @@ public class Task03 {
 		String line = scanner.nextLine();
 
 		// TODO: Пишите код здесь
-		Arrays.stream(line.split("\\s+"))
-				.map(s -> s.length())
-				.mapToInt(Integer::intValue)
-				.average().ifPresent(avg -> System.out.println((int)avg));
 
 	}
 }
