@@ -11,17 +11,24 @@ import java.util.Scanner;
  * языке C++ для описания переменных используются только маленькие латинские
  * символы и символ "_", который отделяет непустые слова друг от друга. Если
  * строка имеет смешанный синтаксис например java_Identifier сообщить об этом.
- * Примеры: java_identifier, long_and_mnemonic_identifier, name, n_e_e_r_c. Вам
- * требуется написать программу, которая преобразует переменную, записанную на
+ * Примеры: java_identifier, long_and_mnemonic_identifier, name, n_e_e_r_c.
+ * <p>
+ * Задание: написать программу, которая преобразует переменную, записанную на
  * одном языке в формат другого языка. Идентификатор (имя) переменной должен
  * вводится с клавиатуры. Программа должна определить, с какого языка взята
  * переменная и переделать её в переменную другого языка. Вывести результат на
  * консоль.
+ * <p>
+ * Пример:
+ * При вводе идентификатора: javaVariable
+ * Вывод должен быть: java_variable
  */
 public class Task08 {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Название переменной");
-		String line = scanner.nextLine();
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите имя переменной: ");
+        String line = scanner.nextLine();
+
+        // TODO: Пишите код здесь
+    }
 }

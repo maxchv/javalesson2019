@@ -16,7 +16,7 @@ public class TaskTest04 extends BaseTest {
 		return Arrays.asList(new Object[][]{
 				{"ab baa aba abc","ab abc"},
 				{"idi if oko egh upl","if egh upl"},
-				{"Lyes no noupe yep yea","yes yep"},
+				{"yes no noupe yep yea","yes yep"},
 		});
 	}
 

@@ -1,53 +1,40 @@
 package ua.step.homework02;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import ua.step.BaseTest;
 
-import ua.step.homework02.Task05;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.Collection;
 
-public class TaskTest05 {
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-	@Before
-	public void setUpStreams() {
-		System.setOut(new PrintStream(outContent));
-	}
+@RunWith(Parameterized.class)
+public class TaskTest05 extends BaseTest {
+    @Parameterized.Parameters(name = "string = {0} result = {1}")
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][]{
+                {"ab:baa aba:abcd:fgfwdf rr", "4"},
+                {"aa:bbbb:cccccc:dddddddd", "4"},
+                {"z xx yyy;bbb:cc:d", "2"},
+                {"z xx yyy;bbb:cc:d:sls:lslslsls", "3"},
+        });
+    }
 
-	@After
-	public void cleanUpStreams() {
-		System.setOut(null);
-	}
+    private final String input;
+    private final String expected;
 
-	@Test
-	public void test() {
-		String inputData = "ab:baa aba:abcd:fgfwdf rr";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task05.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().indexOf("4")!=-1);
-	}
-	
-	@Test
-	public void test2() {
-		String inputData = "aa:bbbb:cccccc:dddddddd";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task05.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().indexOf("4")!=-1);
-	}
-	
-	@Test
-	public void test3() {
-		String inputData = "z xx yyy;bbb:cc:d";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task05.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().indexOf("2")!=-1);
-	}
+    public TaskTest05(String input, String expected) {
+        super(null, Task05.class);
+        this.input = input;
+        this.expected = expected;
+    }
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        if (testClass == null) return;
+        String errorMessage = String.format("Ожидается, что для строки %s результат будет %s", input, expected);
+        super.systemInputTest(input, expected, errorMessage);
+    }
 }

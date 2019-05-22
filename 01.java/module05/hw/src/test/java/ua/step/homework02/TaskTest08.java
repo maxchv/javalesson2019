@@ -1,75 +1,41 @@
 package ua.step.homework02;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import ua.step.BaseTest;
 
-import ua.step.homework02.Task08;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.Collection;
 
-public class TaskTest08 {
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+@RunWith(Parameterized.class)
+public class TaskTest08 extends BaseTest {
+    @Parameterized.Parameters(name = "string = {0} result = {1}")
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][]{
+                {"java_home", "javaHome"},
+                {"javaHome", "java_home"},
+                {"_java_home", "javaHome"},
+                {"j_a_v_a_h_o_m_e", "jAVAHOME"},
+                {"mainJavaHome", "main_java_home"},
+                {"main_java_home", "mainJavaHome"},
+        });
+    }
 
-	@Before
-	public void setUpStreams() {
-		System.setOut(new PrintStream(outContent));
-	}
+    private final String input;
+    private final String expected;
 
-	@After
-	public void cleanUpStreams() {
-		System.setOut(null);
-	}
+    public TaskTest08(String input, String expected) {
+        super(null, Task08.class);
+        this.input = input;
+        this.expected = expected;
+    }
 
-	@Test
-	public void test() {
-		String inputData = "java_home";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("javaHome"));
-	}
-
-	public void test2() {
-		String inputData = "javaHome";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("java_home"));
-	}
-
-	public void test3() {
-		String inputData = "j_a_v_a_h_o_m_e";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("jAVAHOME"));
-	}
-
-	public void test4() {
-		String inputData = "mainJavaHome";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("main_java_home"));
-	}
-	
-	public void test5() {
-		String inputData = "MainJavaHome";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("main_java_home"));
-	}
-	
-	public void test6() {
-		String inputData = "_java_home";
-		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
-		Task08.main(null);
-		String errorMessage = "Wrong result";
-		assertTrue(errorMessage, outContent.toString().contains("javaHome"));
-	}
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        if (testClass == null) return;
+        String errorMessage = String.format("Ожидается, что для строки %s результат будет %s", input, expected);
+        super.systemInputTest(input, expected, errorMessage);
+    }
 }

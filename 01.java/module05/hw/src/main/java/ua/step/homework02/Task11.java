@@ -3,18 +3,21 @@ package ua.step.homework02;
 import java.util.Scanner;
 
 /**
- * Пользователь вводит с клавиатуры предложение с ругательствами. Заменить все
- * ругательства в предложении на звёздочки. Ругательством считается слово дурак.
+ * Задание: Пользователь вводит с клавиатуры предложение с нежелательными словами.
+ * Заменить все нежелательные в предложении на звёздочки.
+ * Нежелательным словом считается слово дурак.
  * Например пользователь ввёл: «Ты дурак или чудак?», программа должна вывести
  * «Ты *** или чудак». Предусмотреть, обработку ситуаций, когда пользователь
  * пытается обмануть программу.
  */
 public class Task11 {
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Введете строку");
-		String line = scanner.nextLine();
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введете строку: ");
+        String line = scanner.nextLine();
 
-	}
+        // TODO: Пишите код здесь
+
+    }
 }

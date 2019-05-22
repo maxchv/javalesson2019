@@ -9,22 +9,32 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.Collection;
 
+
 @RunWith(Parameterized.class)
-public class TaskTest07 extends BaseTest {
+public class TaskTest06 extends BaseTest {
     @Parameterized.Parameters(name = "string = {0} result = {1}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"Mama mIA", "mAMA Mia"},
-                {"aBaB CddCddC", "AbAb cDDcDDc"},
-                {"Java Is The Best Program Language In The World", "java is the best program language in the world"},
+                {"Hello World", "Слов - 2\n" +
+                        "Гласных - 3\n" +
+                        "Согласных - 7"},
+                {"I Love Java", "Слов - 3\n" +
+                        "Гласных - 5\n" +
+                        "Согласных - 4"},
+                {"I Like ITStep", "Слов - 3\n" +
+                        "Гласных - 5\n" +
+                        "Согласных - 6"},
+                {"OpenJDK", "Слов - 1\n" +
+                        "Гласных - 2\n" +
+                        "Согласных - 5"},
         });
     }
 
     private final String input;
     private final String expected;
 
-    public TaskTest07(String input, String expected) {
-        super(null, Task07.class);
+    public TaskTest06(String input, String expected) {
+        super(null, Task06.class);
         this.input = input;
         this.expected = expected;
     }

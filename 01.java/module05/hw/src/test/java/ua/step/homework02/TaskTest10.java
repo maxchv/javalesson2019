@@ -30,8 +30,6 @@ public class TaskTest10 {
 
 	@Test
 	public void test() {
-
-
 		String inputData = "testing";
 		System.setIn(new java.io.ByteArrayInputStream(inputData.getBytes()));
 		Task10.main(null);

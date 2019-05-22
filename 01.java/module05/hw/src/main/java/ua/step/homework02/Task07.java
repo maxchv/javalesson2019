@@ -1,15 +1,28 @@
 package ua.step.homework02;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Пользователь вводит с клавиатуры строку. Поменять все большие буквы на
+ * Задание: Пользователь вводит с клавиатуры строку. Поменять все большие буквы на
  * маленькие, а маленькие на большие.
+ * <p>
+ * Пример:
+ * При введенной строке: iTsTEP
+ * Вывод на консоль должен быть: ItStep
  */
 public class Task07 {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Введите строку");
-		String line = scanner.nextLine();
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String line = scanner.nextLine();
+
+        // TODO: Пишите код здесь
+        line.chars()
+                .mapToObj(ch -> (char)ch)
+                .map(ch -> Character.isLowerCase(ch) ? Character.toUpperCase(ch) : Character.toLowerCase(ch))
+                .forEach(System.out::print);
+
+    }
 }
