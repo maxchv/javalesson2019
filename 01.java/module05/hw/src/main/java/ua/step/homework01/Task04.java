@@ -1,6 +1,8 @@
 package ua.step.homework01;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 /**
  * Задание: написать программу, которая проверяет, все ли значения
@@ -17,6 +19,12 @@ public class Task04 {
         int len = scanner.nextInt();
 
         // TODO: Пишите код здесь
+        int[] arr = new int[len];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        long count = Arrays.stream(arr).distinct().count();
+        System.out.println(count == arr.length ? "Yes" : "No");
 
     }
 }

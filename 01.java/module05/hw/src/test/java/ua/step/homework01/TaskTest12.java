@@ -22,7 +22,7 @@ public class TaskTest12 extends BaseTest {
                 {"2 2 1 1 2 2", "yes"},
                 {"2 2 1 3 2 2", "no"},
                 {"3 2 1 3 2 2 1 2 1 2 3", "no"},
-                {"2 3 1 3 1 2 1 2 3 2 3", "yes"},
+                {"3 3 1 3 1 2 1 2 3 2 3", "yes"},
         });
     }
 
