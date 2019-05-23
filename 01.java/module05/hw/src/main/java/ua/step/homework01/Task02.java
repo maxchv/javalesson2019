@@ -18,6 +18,5 @@ public class Task02 {
         Random rnd = new Random(seed);
 
         // TODO: Пишите код здесь
-
     }
 }

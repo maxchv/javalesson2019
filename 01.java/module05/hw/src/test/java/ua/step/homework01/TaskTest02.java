@@ -13,7 +13,7 @@ public class TaskTest02 extends BaseTest {
 
     public TaskTest02() {
         super(new String[]{"0"}, Task02.class);
-        this.expected = "-60 58";
+        this.expected = "-69 50";
     }
 
     @Test
