@@ -1,5 +1,6 @@
 package ua.step.homework03;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
@@ -38,18 +39,8 @@ public class TaskTest01 {
 	@Test
 	public void test() {
 		Task01.main(null);
-		String rezult = outContent.toString();
-		int start = rezult.indexOf("[");
-		int end = rezult.lastIndexOf("]");
-		String masString = rezult.substring(start + 1, end);
-		String[] elements = masString.split(", ");
-		String result2 = rezult.substring(end + 3).trim();
-		String[] elements2 = result2.split(" ");
-		int j = 0;
-		for (int i = 2; i < elements.length; i++) {
-			if (i % 2 == 0) {
-				assertTrue("Not equals", elements[i].equals(elements2[j++]));
-			}
-		}
+		String actual = outContent.toString().trim();
+		String expected = "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361]";
+		assertEquals(expected, actual);
 	}
 }

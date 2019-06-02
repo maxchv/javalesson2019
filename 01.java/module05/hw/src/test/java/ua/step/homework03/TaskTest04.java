@@ -29,7 +29,7 @@ public class TaskTest04 {
 	public void testLenght() {
 		Task04.main(null);
 		String rezult = outContent.toString();
-		int start = rezult.indexOf("[");
+		int start = rezult.lastIndexOf("[");
 		int end = rezult.lastIndexOf("]");
 		String masString = rezult.substring(start + 1, end);
 		String[] elements = masString.split(", ");
@@ -40,13 +40,13 @@ public class TaskTest04 {
 	public void testValueRange() {
 		Task04.main(null);
 		String rezult = outContent.toString();
-		int start = rezult.indexOf("[");
+		int start = rezult.lastIndexOf("[");
 		int end = rezult.lastIndexOf("]");
 		String masString = rezult.substring(start + 1, end);
 		String[] elements = masString.split(", ");
 		for (String valueString : elements) {
 			int value = Integer.valueOf(valueString);
-			assertTrue("", value >= -300 && value <= 255);
+			assertTrue("", value >= -300 && value <= 555);
 		}
 	}
 
@@ -54,7 +54,7 @@ public class TaskTest04 {
 	public void test() {
 		Task04.main(null);
 		String rezult = outContent.toString();
-		int start = rezult.indexOf("[");
+		int start = rezult.lastIndexOf("[");
 		int end = rezult.lastIndexOf("]");
 		String masString = rezult.substring(start + 1, end);
 		String[] elements = masString.split(", ");

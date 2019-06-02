@@ -27,7 +27,7 @@ public class TaskTest03 {
 
 	@Test
 	public void testLenght() {
-		Task03.main(null);
+		Task03.main(new String[]{"0"});
 		String rezult = outContent.toString();
 		int start = rezult.indexOf("[");
 		int end = rezult.lastIndexOf("]");
@@ -38,7 +38,7 @@ public class TaskTest03 {
 
 	@Test
 	public void testValueRange() {
-		Task03.main(null);
+		Task03.main(new String[]{"0"});
 		String rezult = outContent.toString();
 		int start = rezult.indexOf("[");
 		int end = rezult.lastIndexOf("]");
@@ -52,7 +52,7 @@ public class TaskTest03 {
 
 	@Test
 	public void testSum() {
-		Task03.main(null);
+		Task03.main(new String[]{"0"});
 		String rezult = outContent.toString();
 		int start = rezult.indexOf("[");
 		int end = rezult.lastIndexOf("]");
