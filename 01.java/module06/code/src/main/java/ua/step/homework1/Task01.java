@@ -19,30 +19,69 @@ public class Task01 {
 		
 	}
 
+	/**
+	 * Создает единичную матрицу
+	 * @param n - количество строк
+	 * @param m - количество колонок
+	 * @return единичную (диагональную) матрицу
+	 */
 	public static int[][] createOne (int n, int m) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Создает нулевую матрицу
+	 * @param n - количество строк
+	 * @param m - количество колонок
+	 * @return нулевую матрицу
+	 */
 	public static int[][] createNull (int n, int m) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Вычисляет сумму двух матриц
+	 * @param one - первая матрица
+	 * @param two - вторая матрица
+	 * @return сумму двух матриц
+	 */
 	public static int[][] sumMatrix(int[][] one, int[][] two) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Вычисляет произведение двух матриц
+	 * @param one - первая матрица
+	 * @param two - вторая матрица
+	 * @return произведение матриц
+	 */
 	public static int[][] productMatrix(int[][] one, int[][] two) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Вычисляет произведение матрицы на скаляр
+	 * @param matrix - матрица
+	 * @param num - скаляр
+	 * @return произведение матрицы на скаляр
+	 */
 	public static int[][] productMatrix(int[][] matrix, int num) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Вычисляет детерминант матрицы
+	 * @param matrix - матрица
+	 * @return детерминант матрицы
+	 */
 	public static int determinant(int[][] matrix) {
 		throw new RuntimeException("Not implemented yet");
 	}
 
+	/**
+	 * Печатает матрицу в стандартный поток вывода
+	 * @param matrix - матрица
+	 */
 	public static void printMatrix(int[][] matrix) {
 
 	}

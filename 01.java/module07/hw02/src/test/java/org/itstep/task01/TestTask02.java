@@ -15,7 +15,7 @@ class TestTask02 {
     @Test
     @Order(1)
     @DisplayName("Проверка наличия класса City")
-    void classHumanExists() throws ClassNotFoundException {
+    void classExists() throws ClassNotFoundException {
         Class.forName(className);
     }
 
@@ -23,7 +23,7 @@ class TestTask02 {
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка закрытых полей")
     @ValueSource(strings = {"name", "region", "country", "inhabitants", "index", "code"})
-    void fieldExists(String fieldName) throws ClassNotFoundException, NoSuchFieldException {
+    void privateFieldExists(String fieldName) throws ClassNotFoundException, NoSuchFieldException {
         Class<?> cls = Class.forName(className);
         Field fullName = cls.getDeclaredField(fieldName);
         Assertions.assertTrue(Modifier.isPrivate(fullName.getModifiers()));
@@ -33,7 +33,7 @@ class TestTask02 {
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка геттеров")
     @ValueSource(strings = {"getName", "getRegion", "getCountry", "getInhabitants", "getIndex", "getCode"})
-    void getterExists(String getterName) throws ClassNotFoundException, NoSuchMethodException {
+    void publicGetterExists(String getterName) throws ClassNotFoundException, NoSuchMethodException {
         Class<?> cls = Class.forName(className);
         Method declaredMethod = cls.getDeclaredMethod(getterName);
         Assertions.assertTrue(Modifier.isPublic(declaredMethod.getModifiers()));
@@ -43,9 +43,9 @@ class TestTask02 {
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка сеттеров")
     @ValueSource(strings = {"setName", "setRegion", "setCountry", "setInhabitants", "setIndex", "setCode"})
-    void setterExists(String setterName) throws ClassNotFoundException, NoSuchMethodException {
+    void publicSetterExists(String setterName) throws ClassNotFoundException, NoSuchMethodException {
         Class<?> cls = Class.forName(className);
-        if("setInhabitants".equals(setterName)) {
+        if ("setInhabitants".equals(setterName)) {
             Method declaredMethod = cls.getDeclaredMethod(setterName, int.class);
             Assertions.assertTrue(Modifier.isPublic(declaredMethod.getModifiers()));
         } else {
@@ -58,7 +58,7 @@ class TestTask02 {
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка сеттеров/геттеров")
     @ValueSource(strings = {"name", "region", "country", "inhabitants", "index", "code"})
-    void setterGetter(String fieldName) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    void setterGetterWork(String fieldName) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         Class<?> cls = Class.forName(className);
         Object human = cls.getDeclaredConstructor().newInstance();
 
@@ -130,7 +130,7 @@ class TestTask02 {
     static String randomString() {
         return Stream.generate(() -> rnd.nextInt('z' - 'a' + 1) + 'a')
                 .limit(rnd.nextInt(20) + 20)
-                .map(i -> (char)i.intValue())
+                .map(i -> (char) i.intValue())
                 .map(s -> new String(new char[]{s}))
                 .reduce(String::concat).orElse("");
     }
