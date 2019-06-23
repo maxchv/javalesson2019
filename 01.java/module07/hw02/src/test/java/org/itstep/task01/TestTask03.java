@@ -1,6 +1,10 @@
 package org.itstep.task01;
 
-import org.junit.jupiter.api.*;
+import org.itstep.task02.City;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -9,13 +13,13 @@ import java.lang.reflect.*;
 import java.util.Random;
 import java.util.stream.Stream;
 
-class TestTask02 {
+class TestTask03 {
 
-    private final String className = "org.itstep.task02.City";
+    private final String className = "org.itstep.task03.Country";
 
     @Test
     @Order(1)
-    @DisplayName("Проверка наличия класса City")
+    @DisplayName("Проверка наличия класса Country")
     void classExists() throws ClassNotFoundException {
         Class.forName(className);
     }
@@ -23,7 +27,7 @@ class TestTask02 {
     @Order(2)
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка закрытых полей")
-    @ValueSource(strings = {"name", "region", "country", "inhabitants", "index", "code"})
+    @ValueSource(strings = {"name", "continent", "code", "capital", "cities"})
     void privateFieldExists(String fieldName) throws ClassNotFoundException, NoSuchFieldException {
         Class<?> cls = Class.forName(className);
         Field fullName = cls.getDeclaredField(fieldName);
@@ -33,7 +37,7 @@ class TestTask02 {
     @Order(2)
     @ParameterizedTest(name = "{0}")
     @DisplayName("Проверка геттеров")
-    @ValueSource(strings = {"getName", "getRegion", "getCountry", "getInhabitants", "getIndex", "getCode"})
+    @ValueSource(strings = {"getName", "getContinent", "getCode", "getInhabitants", "getCapital", "getCities"})
     void publicGetterExists(String getterName) throws ClassNotFoundException, NoSuchMethodException {
         Class<?> cls = Class.forName(className);
         Method declaredMethod = cls.getDeclaredMethod(getterName);
@@ -43,8 +47,8 @@ class TestTask02 {
     @Order(3)
     @ParameterizedTest(name = "{1}")
     @DisplayName("Проверка сеттеров")
-    @CsvSource({"java.lang.String,setName", "java.lang.String,setRegion", "java.lang.String,setCountry",
-            "int,setInhabitants", "java.lang.String,setIndex", "java.lang.String,setCode"})
+    @CsvSource({"java.lang.String,setName", "java.lang.String,setContinent", "java.lang.String,setCode",
+            "org.itstep.task02.City,setCapital", "org.itstep.task02.City,addCity"})
     void publicSetterExists(Class<?> clazz, String setterName) throws ClassNotFoundException, NoSuchMethodException {
         Class<?> cls = Class.forName(className);
         Method declaredMethod = cls.getDeclaredMethod(setterName, clazz);
@@ -54,8 +58,8 @@ class TestTask02 {
     @Order(4)
     @ParameterizedTest(name = "{1}")
     @DisplayName("Проверка сеттеров/геттеров")
-    @CsvSource({"java.lang.String,name", "java.lang.String,region", "java.lang.String,country",
-                "int,inhabitants", "java.lang.String,index", "java.lang.String,code"})
+    @CsvSource({"java.lang.String,name", "java.lang.String,continent", "java.lang.String,code",
+            "org.itstep.task02.City,capital"})
     void setterGetterWork(Class<?> clazz, String fieldName) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         Class<?> cls = Class.forName(className);
         Object obj = cls.getDeclaredConstructor().newInstance();
@@ -73,8 +77,31 @@ class TestTask02 {
 
     @Order(5)
     @Test
+    @DisplayName("Проверка метода добавления города")
+    void addCity() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Class<?> cls = Class.forName(className);
+        Object obj = cls.getDeclaredConstructor().newInstance();
+
+        Method setter = cls.getDeclaredMethod("addCity", City.class);
+        Assertions.fail("Not implemented yet");
+    }
+
+    @Order(6)
+    @Test
+    @DisplayName("Проверка метода подсчета количества жителей")
+    void inhabitantsCount() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Class<?> cls = Class.forName(className);
+        Object obj = cls.getDeclaredConstructor().newInstance();
+
+        Method setter = cls.getDeclaredMethod("addCity", City.class);
+        Assertions.fail("Not implemented yet");
+    }
+
+    @Order(7)
+    @Test
     @DisplayName("Проверка Конструкторов")
     void constructors() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Assertions.fail("Not implemented yet");
         Class<?> cls = Class.forName(className);
         Constructor<?>[] declaredConstructors = cls.getDeclaredConstructors();
         Assertions.assertEquals(2, declaredConstructors.length);
