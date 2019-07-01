@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.itstep</groupId>
-    <artifactId>interfaces-homework</artifactId>
+    <artifactId>homework-nested-classes</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
