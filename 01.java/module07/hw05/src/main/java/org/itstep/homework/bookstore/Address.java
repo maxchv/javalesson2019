@@ -3,7 +3,7 @@ package org.itstep.homework.bookstore;
 /*************************************************************************
  *  Интерфейс адреса			                                 *
  ************************************************************************/
-interface Address {
+public interface Address {
     String getStreetName();
     int getStreetNumber();
     String getCity();

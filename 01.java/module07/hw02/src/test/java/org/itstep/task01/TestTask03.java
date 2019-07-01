@@ -82,8 +82,12 @@ class TestTask03 {
         Class<?> cls = Class.forName(className);
         Object obj = cls.getDeclaredConstructor().newInstance();
 
-        Method setter = cls.getDeclaredMethod("addCity", City.class);
-        Assertions.fail("Not implemented yet");
+        Class<?> argClass = Class.forName("org.itstep.task02.City");
+        Method setter = cls.getDeclaredMethod("addCity", argClass);
+
+        setter.invoke(obj, getExpected(argClass));
+        setter.invoke(obj, getExpected(argClass));
+        setter.invoke(obj, getExpected(argClass));
     }
 
     @Order(6)
@@ -101,52 +105,47 @@ class TestTask03 {
     @Test
     @DisplayName("Проверка Конструкторов")
     void constructors() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Assertions.fail("Not implemented yet");
+
         Class<?> cls = Class.forName(className);
         Constructor<?>[] declaredConstructors = cls.getDeclaredConstructors();
         Assertions.assertEquals(2, declaredConstructors.length);
 
         Class<String> stringClass = String.class;
-        Class<Integer> integerClass = int.class;
-        Constructor<?> ctor = cls.getDeclaredConstructor(stringClass, stringClass, stringClass, integerClass, stringClass, stringClass);
+        Class<?> cityClass = Class.forName("org.itstep.task02.City");
+        Constructor<?> ctor = cls.getDeclaredConstructor(stringClass, stringClass, stringClass, cityClass);
 
-        String name = randomString();
-        String region = randomString();
-        String country = randomString();
-        int inhabitants = rnd.nextInt(8_000_000);
-        String index = randomString();
-        String code = randomString();
+        Object name = getExpected(stringClass);
+        Object continent = getExpected(stringClass);
+        Object code = getExpected(stringClass);
+        Object capital = getExpected(cityClass);
 
-        Object human = ctor.newInstance(name, region, country, inhabitants, index, code);
+        Object obj = ctor.newInstance(name, continent, code, capital);
 
         Method getName = cls.getDeclaredMethod("getName");
-        Assertions.assertEquals(name, getName.invoke(human));
+        Assertions.assertEquals(name, getName.invoke(obj));
 
-        Method getRegion = cls.getDeclaredMethod("getRegion");
-        Assertions.assertEquals(region, getRegion.invoke(human));
-
-        Method getCountry = cls.getDeclaredMethod("getCountry");
-        Assertions.assertEquals(country, getCountry.invoke(human));
-
-        Method getInhabitants = cls.getDeclaredMethod("getInhabitants");
-        Object invoke = getInhabitants.invoke(human);
-        Assertions.assertEquals(inhabitants, invoke);
-
-        Method getIndex = cls.getDeclaredMethod("getIndex");
-        Assertions.assertEquals(index, getIndex.invoke(human));
+        Method getContinent = cls.getDeclaredMethod("getContinent");
+        Assertions.assertEquals(continent, getContinent.invoke(obj));
 
         Method getCode = cls.getDeclaredMethod("getCode");
-        Assertions.assertEquals(code, getCode.invoke(human));
+        Assertions.assertEquals(code, getCode.invoke(obj));
+
+        Method getCapital = cls.getDeclaredMethod("getCapital");
+        Assertions.assertSame(capital, getCapital.invoke(obj));
     }
 
 
     static Random rnd = new Random();
 
-    static Object getExpected(Class<?> clazz) {
+    static Object getExpected(Class<?> clazz) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Class<?> cityClass = Class.forName("org.itstep.task02.City");
         if (int.class.equals(clazz)) {
             return rnd.nextInt(800_000);
         } else if (String.class.equals(clazz)) {
             return randomString();
+        } else if (cityClass.equals(clazz)) {
+            Constructor<?> ctor = clazz.getDeclaredConstructor();
+            return ctor.newInstance();
         }
         return null;
     }

@@ -3,7 +3,7 @@ package org.itstep.homework.bookstore;
 /*************************************************************************
  *  Интерфейс человека							 *
  ************************************************************************/
-interface Person {
+public interface Person {
     String getName();
     Address getAddress();
 }

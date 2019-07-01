@@ -3,7 +3,7 @@ package org.itstep.homework.bookstore;
 /*************************************************************************
  *  Интерфейс автора		    					 *
  ************************************************************************/
-interface Author extends Person {
+public interface Author extends Person {
     // Книги написанные этим автором
     Book[] getAllWrittenBook();
 }

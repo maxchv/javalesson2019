@@ -3,7 +3,7 @@ package org.itstep.homework.bookstore;
 /*************************************************************************
  *  Интерфейс покупателя	    					 *
  ************************************************************************/
-interface Customer extends Person {
+public interface Customer extends Person {
     // id клиента
     int getID();
     // кредит клиента

@@ -55,7 +55,7 @@ class TestTask02 {
     @ParameterizedTest(name = "{1}")
     @DisplayName("Проверка сеттеров/геттеров")
     @CsvSource({"java.lang.String,name", "java.lang.String,region", "java.lang.String,country",
-                "int,inhabitants", "java.lang.String,index", "java.lang.String,code"})
+            "int,inhabitants", "java.lang.String,index", "java.lang.String,code"})
     void setterGetterWork(Class<?> clazz, String fieldName) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         Class<?> cls = Class.forName(className);
         Object obj = cls.getDeclaredConstructor().newInstance();

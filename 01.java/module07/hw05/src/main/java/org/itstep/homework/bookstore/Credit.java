@@ -3,7 +3,7 @@ package org.itstep.homework.bookstore;
 /************************************************************************
  *  Абстрактный класс кредита                                           *
  ***********************************************************************/
-abstract class Credit {
+public abstract class Credit {
     final public static int MAX_AMOUNT = 1000;
     protected int debit;
 
