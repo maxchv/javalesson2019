@@ -1,12 +1,11 @@
 package org.itstep;
 
-
-import java.time.Instant;
-import java.time.temporal.TemporalUnit;
 import java.util.*;
 import java.util.function.Predicate;
 
+
 public class Application {
+
     public static void main(String[] args) {
 
         // JCF
