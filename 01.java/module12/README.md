@@ -10,4 +10,5 @@
 
 ## Usefull links
 
-1. []()
+1. [Полное руководство по Java 8 Stream API в картинках и примерах](https://annimon.com/article/2778)
+2. [Шпаргалка Java программиста 4. Java Stream API](https://habr.com/ru/company/luxoft/blog/270383/)
