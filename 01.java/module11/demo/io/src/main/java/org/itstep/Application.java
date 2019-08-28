@@ -3,9 +3,6 @@ package org.itstep;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -13,6 +10,7 @@ import java.util.Scanner;
 public class Application {
 
     public static void main(String[] args) {
+
         // 1.  File
         File file = new File("test.txt");
         if(!file.exists()) {
@@ -85,5 +83,10 @@ public class Application {
         // 4.2 Writer
 
         // 5.  Serialization
+
+        // 6.  Path
+
+        // 7.  Files
+
     }
 }
