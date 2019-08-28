@@ -16,9 +16,10 @@ public class StreamsDemo {
         System.out.format("Stream%n------%n");
         int[] arr = {1, 2, 3, 4, 5, 5, 2, 1};
         String str = "Hello";
-        for (int item : arr) {
-            System.out.println("item = " + item);
-        }     
+//        for (int item : arr) {
+//            System.out.println("item = " + item);
+//        }
+        Arrays.stream(arr).forEach(item -> System.out.println("item = " + item));
 
 //        IntStream.of(1,2,34);
 //        LongStream;
@@ -41,6 +42,7 @@ public class StreamsDemo {
 
     static void collectionStream() {
         System.out.format("Collection Stream%n------%n");
+        stringCollection.forEach(item -> System.out.println(item));
 //        for (String item : stringCollection) {
 //            System.out.println("item = " + item);
 //        }
@@ -50,7 +52,9 @@ public class StreamsDemo {
     private static void filterExample() {
         System.out.format("Filter%n------%n");
         // print string starts with 'a'
-
+        stringCollection.stream()
+                .filter(item -> item.startsWith("a"))
+                .forEach(item -> System.out.println("item = " + item));
 //        List<String> res = new ArrayList<>();
 //        for (String item : stringCollection) {
 //            if (item.startsWith("a")) {
@@ -67,6 +71,10 @@ public class StreamsDemo {
     private static void sortExample() {
         System.out.format("%nSorted%n------%n");
         // sort string starts with 'a' and print
+        stringCollection.stream()
+                .filter(item -> item.startsWith("a"))
+                .sorted((a, b) -> b.compareTo(a))
+                .forEach(item -> System.out.println("item = " + item));
 //        List<String> res = new ArrayList<>();
 //        for (String item : stringCollection) {
 //            if (item.startsWith("a")) {
@@ -91,11 +99,25 @@ public class StreamsDemo {
 //            }
 //        }
 
-        return null;
+        List<Integer> numbers = stringCollection.stream()
+                .filter(item -> item.length() == 4)
+                .map(item -> Integer.valueOf(item.substring(3)))
+                .peek(item -> System.out.println(item))
+                .collect(Collectors.toList());
+
+        Map<String, Integer> collect = stringCollection.stream()
+                .filter(item -> item.length() == 4)
+                .collect(Collectors.toMap(item -> item, item -> Integer.valueOf(item.substring(3))));
+
+        return numbers;
     }
 
     private static void distinctExample(List<? extends Integer> intCollection) {
         System.out.format("%nDistinct%n--------%n");
+        intCollection.stream()
+                     .distinct()
+                     .sorted()
+                     .forEach(item -> System.out.println(item));
 //        List<Integer> distinctList = new ArrayList<>();
 //        for (Integer item : intCollection) {
 //            if (!distinctList.contains(item)) {
@@ -114,7 +136,8 @@ public class StreamsDemo {
 //                break;
 //            }
 //        }
-//        System.out.println("isAnyWordStartA: " + isAnyWordStartA);
+        boolean isAnyWordStartA = stringCollection.stream().anyMatch(item -> item.startsWith("a"));
+        System.out.println("isAnyWordStartA: " + isAnyWordStartA);
 
 
 //        for (String item : stringCollection) {
@@ -123,11 +146,12 @@ public class StreamsDemo {
 //                break;
 //            }
 //        }
-//        System.out.println("isAllWordStartA: " + isAllWordStartA);
+        boolean isAllWordStartA = stringCollection.stream().allMatch(item -> item.startsWith("a"));
+        System.out.println("isAllWordStartA: " + isAllWordStartA);
 
 
-
-//        System.out.println("isNoneWordStartA: " + isNoneWordStartA);
+        boolean isNoneWordStartA = stringCollection.stream().noneMatch(item -> item.startsWith("a"));;
+        System.out.println("isNoneWordStartA: " + isNoneWordStartA);
     }
 
     private static void minMaxExample(List<Integer> intCollection) {
@@ -138,6 +162,12 @@ public class StreamsDemo {
 //            if(Integer.compare(item, maxInt) > 0) {
 //                maxInt = item;
 //            }
+//        }
+        Optional<Integer> max = intCollection.stream().filter(item -> item > 0).max((a, b) -> a - b);
+        Integer integer = max.orElse(-1);
+        System.out.println(integer);
+//        if(max.isPresent()) {
+//            System.out.println(max.get());
 //        }
 
 //        System.out.println("max: " + maxInt);
@@ -172,17 +202,26 @@ public class StreamsDemo {
 //            average += item;
 //        }
 //        average /= intCollection.size();
+        intCollection.stream()
+                .mapToInt(i -> i)
+                .average()
+                .ifPresent(avg -> System.out.println(avg));
 
 		// summaryStatistics
+        IntSummaryStatistics intSummaryStatistics = intCollection.stream()
+                .mapToInt(i -> i)
+                .summaryStatistics();
+        System.out.println(intSummaryStatistics);
     }
 
     private static void reduceExample(List<Integer> intCollection) {
         System.out.format("%nReduce%n-------%n");
-//        int sum = 0;
+//        int prod = 1;
 //        for(Integer item: intCollection) {
-//            sum = sum + item;
+//            prod = prod * item;
 //        }
-//        System.out.println("sum: " + sum);
+        int prod = intCollection.stream().reduce(1, (acc, item) -> acc * item);
+        System.out.println("prod: " + prod);
     }
 
     public static void main(String[] args) {
@@ -225,7 +264,7 @@ public class StreamsDemo {
     }
 
     private static void parallelStreamsExample() {
-        int max = 300_000;
+        int max = 10_000_000;
         List<String> values = new ArrayList<>(max);
         for (int i = 0; i < max; i++) {
             UUID uuid = UUID.randomUUID();
@@ -233,23 +272,25 @@ public class StreamsDemo {
         }
 
         System.out.format("%nSequence%n-------%n");
-        List<String> cpy = new ArrayList<>(values);
         Instant start = Instant.now();
-        cpy.stream()
+        System.out.println("start = " + start);
+        values.stream()
                 .sorted()
                 .count();
         Instant end = Instant.now();
-        long seq = Duration.between(start, end).getNano();
+        System.out.println("end = " + end);
+        Duration seq = Duration.between(start, end);
         System.out.println("seq: " + seq);
 
         System.out.format("%nParallel%n-------%n");
         start = Instant.now();
+        System.out.println("start = " + start);
         values.parallelStream()
                 .sorted()
                 .count();
-        end = Instant.now();
-        long par = Duration.between(start, end).getNano();
+        System.out.println("end = " + end);
+        Duration par = Duration.between(start, end);
         System.out.println("\npar: " + par);
-        System.out.println("seq/par: " + ((double) seq / par));
+        //System.out.println("seq/par: " + ((double) seq / par));
     }
 }

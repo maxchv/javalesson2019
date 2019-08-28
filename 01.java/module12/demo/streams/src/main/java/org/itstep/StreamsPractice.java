@@ -5,7 +5,22 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StreamsPractice {
-    public static void main(String ...args){    
+
+    @FunctionalInterface
+    interface MyInterface<T> {
+        void apply(T data); // void println(Object x)
+    }
+
+    public static void test(MyInterface obj) {
+        obj.apply("test");
+    }
+
+    public static void main(String ...args){
+
+        test(data -> System.out.println(data));
+
+        test(System.out::println);
+
         Trader raoul = new Trader("Raoul", "Cambridge");
         Trader mario = new Trader("Mario","Milan");
         Trader alan = new Trader("Alan","Cambridge");
@@ -18,7 +33,12 @@ public class StreamsPractice {
             new Transaction(mario, 2012, 710),	
             new Transaction(mario, 2012, 700),
             new Transaction(alan, 2012, 950)
-        );	
+        );
+
+		transactions
+                .stream()
+                //.stream()
+                .forEach(System.out::println);
 
         // Задание 1: найдите все транзакции с 2011 года и отсортируйте их по значению (по возрастанию).
         
