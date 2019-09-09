@@ -1,4 +1,4 @@
-package ua.itstep.shaptala.examples;
+package org.itstep;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;

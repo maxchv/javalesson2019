@@ -1,5 +1,6 @@
-package ua.itstep.shaptala.examples;
+package org.itstep;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
@@ -9,7 +10,7 @@ import java.util.concurrent.*;
  */
 public class Demo8 {
     // TODO: implements interface Callable instead Runnable
-    public static class Worker implements Runnable {
+    public static class Worker implements Callable<String> {
 
         final String name;
 
@@ -19,7 +20,7 @@ public class Demo8 {
         }
 
         @Override
-        public void run() {
+        public String call() {
             long sleepTime = (long) (Math.random()*10000L);
             System.out.println(name + " started, going to sleep for " + sleepTime + " seconds");
             try {
@@ -29,26 +30,39 @@ public class Demo8 {
             }
             System.out.println(name + " finished");
             // FIXME: return name???
-            // return name;
+             return name;
         }
     }
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         // TODO: ExecutorService, Executors
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(10);
 
         System.out.println("Submit worker 1");
-        Future<String> future1 = executorService.submit(() -> {
+        Future<?> future1 = executorService.submit(() -> {
+            System.out.println("First work " + Thread.currentThread().getName()+  "  at " + LocalDateTime.now());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            return "Worker 1";
+            System.out.println("End work " +Thread.currentThread().getName()+  "  at " + LocalDateTime.now());
+            return Thread.currentThread().getName();
+        });
+
+        executorService.submit(() -> {
+            System.out.println("Second work " + Thread.currentThread().getName()+  "  at " + LocalDateTime.now());
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("End work " +Thread.currentThread().getName()+  "  at " + LocalDateTime.now());
+            return Thread.currentThread().getName();
         });
 
         System.out.println("Submit worker 1");
-
+        //future1.cancel(true);
         System.out.println("Result of worker 1: " + future1.get());
         System.out.println("Result of worker 2: ");
         System.out.println("---------------------");
@@ -63,6 +77,7 @@ public class Demo8 {
 
         System.out.println("Exited invokeAll");
 
+        executorService.invokeAll(workerList);
         // for all tasks {
             System.out.println("Result from worker: ");
         //}

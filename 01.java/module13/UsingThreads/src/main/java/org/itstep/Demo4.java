@@ -1,4 +1,4 @@
-package ua.itstep.shaptala.examples;
+package org.itstep;
 
 public class Demo4 {
 
@@ -29,6 +29,8 @@ public class Demo4 {
 class Account2 {
     private long balance;
 
+    Object locker = new Object();
+
     public Account2() {
         this(0L);
     }
@@ -45,10 +47,13 @@ class Account2 {
         this.balance = balance;
     }
 
-    public synchronized void deposit(long amount) {
+    public void deposit(long amount) {
         checkAmountNonNegative(amount);
 
-        balance += amount;
+        synchronized (locker) {
+            balance += amount;
+            locker.notify();
+        }
     }
 
     private static void checkAmountNonNegative(long amount) {
@@ -57,11 +62,14 @@ class Account2 {
         }
     }
 
-    public synchronized void withdraw(long amount) {
+    public void withdraw(long amount) throws InterruptedException {
         checkAmountNonNegative(amount);
 
-        if (balance < amount) {
-            throw new IllegalArgumentException("not enough money");
+        synchronized (locker) {
+            while (balance < amount) {
+                //throw new IllegalArgumentException("not enough money");
+                locker.wait(1000);
+            }
         }
 
         balance -= amount;

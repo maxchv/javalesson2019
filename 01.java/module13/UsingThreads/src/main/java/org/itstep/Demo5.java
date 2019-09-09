@@ -1,4 +1,4 @@
-package ua.itstep.shaptala.examples;
+package org.itstep;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -8,6 +8,7 @@ public class Demo5 {
 	
     static class Friend {
         private final String name;
+        Lock lock = new ReentrantLock();
 
         public Friend(String name) {
             this.name = name;
@@ -16,14 +17,26 @@ public class Demo5 {
             return this.name;
         }
 
-        public synchronized void seyHi(Friend friend) {
-            System.out.format("%s: %s"
-                + " said hi to me!%n",
-                name, friend.getName());
-            friend.hiBack(this);
+        public void seyHi(Friend friend) {
+
+            boolean myLock = lock.tryLock();
+            boolean yourLock = friend.lock.tryLock();
+
+            if(myLock && yourLock) {
+                System.out.format("%s: %s said hi to me!%n",
+                        name, friend.getName());
+                friend.hiBack(this);
+            } else {
+                if(myLock) {
+                    lock.unlock();
+                }
+                if(yourLock) {
+                    friend.lock.unlock();
+                }
+            }
         }
 
-        public synchronized void hiBack(Friend friend) {
+        public void hiBack(Friend friend) {
             System.out.format("%s: %s"
                 + " has said hi back to me!%n",
                 name, friend.getName());
@@ -34,8 +47,10 @@ public class Demo5 {
     public static void main(String[] args) {
         final Friend petro = new Friend("Petro");
         final Friend vano =  new Friend("Vano");
-        
+
+        System.out.println("Start");
         new Thread(() -> petro.seyHi(vano)).start();
         new Thread(() -> vano.seyHi(petro)).start();
+        System.out.println("End");
     }
 }
