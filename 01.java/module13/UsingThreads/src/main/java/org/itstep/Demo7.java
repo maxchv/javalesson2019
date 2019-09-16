@@ -1,15 +1,29 @@
 package org.itstep;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 
 public class Demo7 {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));//Arrays.asList(1,2,3,4,5);
+        // Конкурентные коллекции
+
+        // CopyOnWriteArrayList<E>
+        // CopyOnWriteArraySet<E>
+        // ConcurrentSkipListSet<E>
+
+        // ConcurrentHashMap<K, V>
+        // ConcurrentSkipListMap<K, V>
+
+        // ConcurrentLinkedQueue<E>
+        // ConcurrentLinkedDeque<E>
+        // ArrayBlockingQueue<E>
+        // LinkedBlockingQueue<E>
+        // PriorityBlockingQueue<E>
+        // SynchronousQueue<E>
+
+        Collection<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));//Arrays.asList(1,2,3,4,5);
 
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
