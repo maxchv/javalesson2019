@@ -1,0 +1,37 @@
+Домашнее задание
+
+1. Зарегестрироваться на github.com
+2. Создать репозиторий с названием javahw - теперь здесь вы будете хранить свои домашние задания по java
+3. Создать клон репозитория на домашнем компьютере
+4. В репозиторий добавить файл .gitignore, в который доавить содержимое https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+5. Сохранить .gitignore добавить изменения, закоммитить и запушить на github
+6. В настройках репоизтория включить в качестве контрибютора меня по имени javalesson2019.
+   Для этого необходимо перейти на страницу настроек репозитория Settings и в разделе Collaborators указать javalesson2019.
+7. Прислать ссылку на mystat на созданный репозиторий
+
+Рекомендую пройти туториал по работе с git: https://githowto.com
+
+Для подготовке к экзамену рекомендую протестировать свой уровень знаний.
+Данные тесты готовят к экзамену и не оцениваются.
+Желательно попровать англоязычные версии, а если будет не понятно, то только тогда
+перейти на русскоязычные варианты
+
+Английские версии тестов:
+https://forms.gle/m4txhVU39YucmLPN6
+https://forms.gle/F2HWBJH43GXdipYY6
+https://forms.gle/rU3uvm1ksvA61i4T6
+https://forms.gle/JfsucrUog9yeJcp87
+https://forms.gle/qmseSZpz4NYsEpF18
+https://forms.gle/EfvsyHnAv1D36d499
+https://forms.gle/p1SNGh6XkrMhqEtA8
+https://forms.gle/Ue2F7yugFQWTTRGf6
+
+Русские версии тестов:
+https://forms.gle/yobeTLZCJTgt8cB19
+https://forms.gle/jW53DF3gLDeCjA3r9
+https://forms.gle/qXn8evSuUN8ZSpJJ8
+https://forms.gle/bdSB2RpUqAEfFYJ77
+https://forms.gle/CyspsLFSHH2Zpdzv5
+https://forms.gle/WkKodSxWWkhNMG6f8
+https://forms.gle/kk4ucc7Y58RMEJ7B6
+https://forms.gle/CdYAMUCR4vDoegS36
