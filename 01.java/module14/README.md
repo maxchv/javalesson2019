@@ -14,4 +14,5 @@
 ## Usefull links
 
 1. [Git HowTo](https://githowto.com)
+2. [Git Branches](https://learngitbranching.js.org/)
 2. [Git CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
