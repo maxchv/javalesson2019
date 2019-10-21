@@ -1,7 +1,6 @@
 # Module 5. 
 ## Positioning. Executing layout of Web pages by means of blocks
 
-
 1.	The position property.
 2.	The visibility and overflow properties.
 3.	Practice.

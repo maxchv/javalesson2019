@@ -26,3 +26,5 @@ Text alignment within inline elements: the align attribute.
 5. [HTML5: Past, Present & Future Infographic](https://i0.wp.com/fribly.com/wp-content/uploads/2012/09/html5-infographics.jpg)
 6. [W3School](https://www.w3schools.com/)
 7. [Evolution Web Interactive](http://evolutionofweb.appspot.com/?hl=ru)
+8. [w3c validator](https://validator.w3.org/)
+9. [html5 validator](https://html5.validator.nu/)
