@@ -6,6 +6,10 @@ import java.util.concurrent.*;
 
 public class Demo6 {
 
+    //final static Semaphore semaphore = new Semaphore(4);
+    //final static CountDownLatch countDownLatch = new CountDownLatch(4);
+    final static CyclicBarrier cyclicBarrier = new CyclicBarrier(4);
+
     final static Random random = new Random();
 
     static class Player implements Callable<Void> {
@@ -18,10 +22,19 @@ public class Demo6 {
 
         @Override
         public Void call() throws Exception {
-            Thread.sleep(random.nextInt(1000) + 100);
+            Thread.sleep(random.nextInt(3000) + 1000);
+            ////System.out.println("Count: " + countDownLatch.getCount());
             System.out.println("Player " + name + " is ready");
+            cyclicBarrier.await();
+            ////countDownLatch.countDown();
+            //semaphore.acquire();
+            ////countDownLatch.await();
             System.out.println(name + " is starting");
+            Thread.sleep(random.nextInt(3000) + 1000);
+            //semaphore.release();
+            cyclicBarrier.reset();
             System.out.println(name + " end");
+
             return null;
         }
     }
@@ -40,8 +53,8 @@ public class Demo6 {
                         new Player("four"),
                         new Player("five"),
                         new Player("six"),
-                        new Player("seven"),
-                        new Player("eight")
+                        new Player("seven")
+                        //new Player("eight")
                 )
         );
         //executorService.awaitTermination(5, TimeUnit.SECONDS);
