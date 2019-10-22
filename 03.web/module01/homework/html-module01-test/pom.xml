@@ -63,6 +63,12 @@
       <version>1.18.10</version>
       <scope>provided</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/nu.validator/validator -->
+    <dependency>
+      <groupId>nu.validator</groupId>
+      <artifactId>validator</artifactId>
+      <version>18.11.5</version>
+    </dependency>
   </dependencies>
   <build>
     <resources>
