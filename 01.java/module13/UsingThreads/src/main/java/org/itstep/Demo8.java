@@ -1,7 +1,9 @@
 package org.itstep;
 
+import java.sql.Time;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -36,6 +38,13 @@ public class Demo8 {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         // TODO: ExecutorService, Executors
+        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(4);
+        scheduledExecutorService.schedule(() -> {
+            System.out.printf("Run it after 10 sec");
+        }, 10, TimeUnit.SECONDS);
+        ScheduledFuture<?> scheduledFuture = scheduledExecutorService.scheduleWithFixedDelay(() -> {
+            System.out.println("Time: " + LocalDateTime.now());
+        }, 0, 1, TimeUnit.SECONDS);
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(10);
 
         System.out.println("Submit worker 1");
@@ -77,12 +86,16 @@ public class Demo8 {
 
         System.out.println("Exited invokeAll");
 
-        executorService.invokeAll(workerList);
+        List<Future<String>> futures = executorService.invokeAll(workerList);
         // for all tasks {
             System.out.println("Result from worker: ");
         //}
 
-        executorService.awaitTermination(10, TimeUnit.SECONDS);
-        executorService.shutdown();
+        //executorService.awaitTermination(10, TimeUnit.SECONDS);
+        Thread.sleep(1000);
+        scheduledFuture.cancel(true);
+
+        executorService.shutdownNow();
+        scheduledExecutorService.shutdownNow();
     }
 }
