@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 500px;
+            height: 400px;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th {
+            border: 1px solid;
+        }
+
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<h1>Tables</h1>
+
+<h2>Simple</h2>
+<!--<table width="500px" cellspacing="10" cellpadding="30" height="400px" border="1">-->
+<table>
+    <colgroup>
+        <col style="background: yellow; width: 100px;"/>
+    </colgroup>
+    <colgroup style="background: red;">
+        <col/>
+        <col style="background: magenta"/>
+    </colgroup>
+    <thead style="background: white">
+        <tr>
+            <th>one</th>
+            <th>two</th>
+            <th>three</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>end 1</td>
+        <td>end 2</td>
+        <td>end 3</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

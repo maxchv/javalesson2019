@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div, span {
+            background: red;
+            width: 300px;
+            height: 200px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        div.button {
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            background: white;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>block 1</div>
+    <div id="block2" style="visibility: hidden">block 2</div>
+    <div id="block3" style="display: none">block 3</div>
+    <div>block 3</div>
+    <span>inline?</span>
+    <span>inline?</span>
+    <span>inline?</span>
+    <div class="button" onclick="block2.style.visibility='visible'">Show</div>
+    <div class="button" onclick="block3.style.display='inline-block'">Show</div>
+</body>
+</html>
