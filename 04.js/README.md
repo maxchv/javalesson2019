@@ -29,3 +29,17 @@ regular expressions;
 Upon the completion of this course, the student submits all practical
 tasks of the course. Grades for the subject are issued based on all
 submitted tasks.
+
+Topic Plan
+
+Module 1. Introduction to JavaScript. 2 double-classes
+Module 2. Object. Arrays. Array object. Strings. String object. Date object.
+Math object. Introduction to the object-oriented programming
+(OOP). 2 double-classes
+Module 3. Processing events. 2 double-classes
+Module 4. Browser Object Model. Document Object Model. 2 double-classes
+Module 5. Forms. 2 double-classes
+Module 6. Form validity verification. The use of Cookie . 2 double-classes
+Module 7. Canvas drawing, support of media . 2 double-classes
+Module 8. JSON, Ajax . 2 double-classes
+
