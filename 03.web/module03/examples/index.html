@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <style>
+        a {
+            color: aqua;
+            font-family: cursive;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:active {
+            color: black;
+            background: yellow;
+        }
+
+        a:hover {
+            cursor: crosshair;
+            background: #c907cc;
+        }
+    </style>
+</head>
+<body>
+<h1>Links demo</h1>
+<div>
+    <ul>
+        <li><a href="https://itstep.dp.ua">ItStep Dnipro</a></li>
+        <li><a href="./pages/page1.html" target="_self">Page #1</a></li>
+        <li><a href="http://google.com" target="_blank">Google</a></li>
+        <li><a href="./pages/page1.html" target="demo">Load iFrame</a></li>
+        <li><a href="https://www.youtube.com/embed/5pBcKKiZSGE" target="youtube">Youtube HTML</a></li>
+        <li><a href="https://www.youtube.com/embed/Zxpz5tRrUvU" target="youtube">Youtube Java</a></li>
+    </ul>
+    <iframe width="300" height="200" name="demo"></iframe>
+    <iframe width="560" height="315" name="youtube"
+             frameborder="1"
+            allowfullscreen></iframe>
+</div>
+</body>
+</html>
